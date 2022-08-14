@@ -15,3 +15,15 @@ x.hello = 'hell' // change property value
 console.log(x['hello'])
 delete x.life
 console.log(x['life']) // data should show undefined
+
+// check if the object has own property
+
+function checkProperty(prop){
+    if (x.hasOwnProperty(prop)){
+        return x[prop]
+    }
+    else{
+        return undefined
+    }
+}
+console.log(checkProperty('hell'))
